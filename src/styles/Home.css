@@ -1,0 +1,27 @@
+/* Home.css */
+
+/* Contenedor para alinear tus futuros proyectos en grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-card {
+  background-color: #161b22;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo del texto descriptivo para que sea más legible */
+.projects-section p {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 1rem auto;
+}

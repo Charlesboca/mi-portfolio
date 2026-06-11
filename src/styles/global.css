@@ -1,0 +1,27 @@
+:root {
+  --primary: #0f172a;    /* Azul muy oscuro, fondo principal */
+  --accent: #3b82f6;     /* Azul eléctrico, para botones y detalles */
+  --text: #f8fafc;       /* Blanco azulado para el texto */
+  --secondary: #64748b;  /* Gris pizarra para textos secundarios */
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary);
+  color: var(--text);
+  font-family: 'Inter', sans-serif; /* Si no la tienes, usa sans-serif */
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+

@@ -1,0 +1,51 @@
+.contacto-container {
+  padding: 6rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  /* Eliminamos el blanco y usamos un tono oscuro sutil */
+  background: rgba(255, 255, 255, 0.03); 
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Un borde muy fino para definir el área */
+  border-radius: 20px;
+  backdrop-filter: blur(10px); /* Efecto vidrio para que se vea moderno */
+}
+
+.contacto-container h2 {
+  color: #ffffff; /* Título blanco para resaltar sobre el fondo oscuro */
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contacto-container p {
+  color: #a0a0c0; /* Un gris azulado que combina con tu Home */
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.contacto-info p {
+  background: rgba(255, 255, 255, 0.05); /* Fondo oscuro para las cajas de info */
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+.contacto-info a {
+  color: #00d2ff; /* Usamos el azul de tu gradiente del Home */
+  text-decoration: none;
+}
+
+.contacto-container h2 {
+  font-size: 3rem; /* Un poco más grande para destacar */
+  font-weight: 800; /* Más peso para que se vea sólido */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  
+  /* Gradiente idéntico al de tu Home */
+  background: linear-gradient(to right, #00d2ff, #9d4edd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+  /* Animación sutil de entrada */
+  animation: fadeInDown 1s ease-out;
+}

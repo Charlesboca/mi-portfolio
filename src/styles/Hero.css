@@ -1,0 +1,74 @@
+/* Hero.css */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: radial-gradient(circle at top right, #1a1a2e, #16213e);
+  color: white;
+  min-height: 30vh;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -2px;
+  /* Degradado elegante en el texto */
+  background: linear-gradient(to right, #00d2ff, #9d4edd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: #a0a0c0;
+  max-width: 600px;
+  line-height: 1.6;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cta-button {
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background: transparent;
+  border: 2px solid #9d4edd;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  /* Animación de entrada */
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Efecto al pasar el cursor (Hover) */
+.cta-button:hover {
+  background: #5c4edd;
+  box-shadow: 0 0 20px #9d4edd; /* El brillo (Glow) */
+  transform: translateY(-5px);
+  
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

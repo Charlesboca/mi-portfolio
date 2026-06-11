@@ -1,0 +1,29 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centra todo horizontalmente */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0d1117;
+  border-bottom: 1px solid #30363d;
+  gap: 2rem; /* Crea espacio entre el logo y los links */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem; /* Espacio entre Inicio, Proyectos y Contacto */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #c9d1d9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #58a6ff;
+}

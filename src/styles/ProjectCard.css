@@ -1,0 +1,59 @@
+.project-card {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #334155;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px; /* Altura fija para todas */
+  object-fit: cover; /* Recorta la imagen para que no se deforme */
+  border-radius: 8px 8px 0 0;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: #3b82f633;
+  color: #60a5fa;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  margin-top: 10px;
+}
+
+.btn-view {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Efecto al pasar el cursor (Hover) */
+.btn-view:hover {
+  background: #5c4edd;
+  box-shadow: 0 0 20px #dd4e5a; /* El brillo (Glow) */
+  transform: translateY(-5px);
+  
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

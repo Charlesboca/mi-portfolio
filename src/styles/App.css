@@ -1,0 +1,18 @@
+/* App.css */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la pantalla */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Para centrar el contenido principal y que no se pegue a los bordes */
+main {
+  flex: 1; /* Esto hace que el main empuje el footer hacia el fondo si es necesario */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
