@@ -1,20 +1,54 @@
+/* Contenedor principal del Footer */
 .footer {
-  background-color: #0d1117;
-  color: #8b949e;
-  padding: 2rem;
-  text-align: center;
-  border-top: 1px solid #30363d;
-}
-
-.footer-links {
-  list-style: none;
+  width: 100%;
+  background-color: #0b111e; /* El color oscuro que tenés de fondo */
+  padding: 20px 0;
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  align-items: center;
+}
+
+/* Envoltura interna del contenido */
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos uno abajo del otro */
+  align-items: center;    /* Centra horizontalmente todo el contenido */
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* El texto de Copyright */
+.footer-content p {
+  margin: 0 0 10px 0; /* Un pequeño margen abajo para separarlo del link */
+  font-size: 0.9rem;
+  color: #a0aec0; /* Ajustá al gris que usás */
+}
+
+/* ===== AQUÍ ESTÁ EL TRUCO PARA EL CENTRADO ===== */
+.footer-links {
+  list-style: none;     /* Quita los puntitos de la lista */
+  padding-left: 0;      /* ¡CLAVE! Borra el padding por defecto que lo corre a la derecha */
+  margin: 0;            /* Resetea márgenes externos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links li {
+  display: inline-block;
 }
 
 .footer-links a {
-  color: #58a6ff;
+  color: #3b82f6; /* Tu color azul del enlace */
   text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #60a5fa; /* Efecto hover */
 }
