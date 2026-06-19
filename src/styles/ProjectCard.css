@@ -13,7 +13,7 @@
 
 .project-image {
   width: 100%;
-  height: 200px; /* Altura fija para todas */
+  height: 200px; /* Altura fija para todas en PC */
   object-fit: cover; /* Recorta la imagen para que no se deforme */
   border-radius: 8px 8px 0 0;
 }
@@ -43,17 +43,45 @@
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Transición para el botón */
 }
 
-/* Efecto al pasar el cursor (Hover) */
+/* Efecto al pasar el cursor (Hover) en PC */
 .btn-view:hover {
   background: #5c4edd;
   box-shadow: 0 0 20px #dd4e5a; /* El brillo (Glow) */
   transform: translateY(-5px);
-  
 }
 
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* ===================================================
+   MEDIA QUERY PARA CELULARES (Pantallas chicas)
+=================================================== */
+@media (max-width: 480px) {
+  .project-card:hover {
+    transform: none; /* Desactivamos el salto vertical en el celu */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Sombra fija y más suave */
+  }
+
+  .project-image {
+    height: 170px; /* Un toque más baja para que proporcione mejor en mobile */
+  }
+
+  .project-content {
+    padding: 15px; /* Espaciado interno un poco más compacto */
+  }
+
+  .btn-view {
+    margin-top: 15px;
+    padding: 12px; /* Un pelín más alto para que sea más fácil de tocar con el dedo */
+  }
+  
+  .btn-view:hover {
+    transform: none; /* Evitamos que el botón flote al presionarlo en mobile */
+    box-shadow: none;
+  }
 }
