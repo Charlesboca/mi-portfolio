@@ -1,0 +1,13 @@
+# Le da permiso a todos los buscadores (Google, Bing, Yahoo, etc.)
+User-agent: *
+
+# Carpetas y archivos que no queremos que indexen (rutas internas del build)
+Disallow: /dist/
+Disallow: /node_modules/
+
+# Permite indexar todo lo demás
+Allow: /
+
+# Le indica al buscador dónde está el mapa de tu sitio (muy pro para Search Console)
+Sitemap: https://mi-portfolio-carlos-avalos.vercel.app/sitemap.xml
+
