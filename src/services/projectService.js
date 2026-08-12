@@ -25,6 +25,14 @@ export const getProyectos = () => {
       tech: ["React", "CSS","Firebase","CRUD"],
       link: "https://www.llevatetodocorrientes.com.ar/",
       image: "/llevate-todo.jpg" // Agrega esta línea para incluir la imagen del proyecto
+    },
+    {
+      id: 4,
+      title: "La Casa de Cata",
+      description: "Plataforma de gestión de pedidos y e-commerce dinámico de productos varios.",
+      tech: ["React", "CSS","Firebase","CRUD"],
+      link: "https://www.lacasadecata.com.ar/",
+      image: "/lacasadecata.jpg" // Agrega esta línea para incluir la imagen del proyecto
     }
   ];
 };
