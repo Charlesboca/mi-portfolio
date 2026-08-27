@@ -38,13 +38,45 @@ function Home() {
           Me mantengo en constante capacitación dentro del ecosistema tecnológico actual.
         </p>
 
-        {/* Insignias de tecnologías (Skills) */}
-        <div className="about-skills">
-          {['React', 'Node.js', 'JavaScript', 'CSS', 'Firebase', 'Git', 'Vercel'].map((tech, index) => (
-            <span key={index} className="skill-badge">
-              {tech}
-            </span>
-          ))}
+        {/* Tecnologías y herramientas */}
+        <div className="tech-stack">
+
+          <div className="tech-category">
+            <h3>Frontend</h3>
+            <div className="tech-list">
+              <span>React</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Vite</span>
+            </div>
+          </div>
+
+          <div className="tech-category">
+            <h3>Backend</h3>
+            <div className="tech-list">
+              <span>Node.js</span>
+  
+              <span>APIs REST</span>
+            </div>
+          </div>
+
+          <div className="tech-category">
+            <h3>Bases de datos</h3>
+            <div className="tech-list">
+              <span>Firebase / Firestore</span>
+              <span>Oracle</span>
+              <span>SQL Server</span>
+            </div>
+          </div>
+
+          <div className="tech-category">
+            <h3>Herramientas</h3>
+            <div className="tech-list">
+              <span>GitHub</span>
+              <span>Vercel</span>
+            </div>
+          </div>
+
         </div>
       </section>
 
