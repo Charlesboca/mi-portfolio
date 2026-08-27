@@ -29,26 +29,28 @@ function Home() {
         </p>
       </section>
 
-      {/* NUEVA SECCIÓN: Sobre Mí */}
-      <section className="about-section" style={{ padding: '2rem 1rem', maxWidth: '900px', margin: '0 auto', textAlign: 'center', color: '#fff' }}>
-        <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', fontWeight: '600' }}>Sobre mí</h2>
-        <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#cbd5e1', marginBottom: '1.5rem' }}>
+      {/* Sección Sobre Mí */}
+      <section className="about-section">
+        <h2 className="about-title">Sobre mí</h2>
+        <p className="about-description">
           Desarrollador FullStack enfocado en crear experiencias web modernas, escalables y con alto impacto visual. 
           Me apasiona transformar ideas complejas en soluciones funcionales, cuidando tanto la interfaz de usuario como la lógica por detrás. 
           Me mantengo en constante capacitación dentro del ecosistema tecnológico actual.
         </p>
+
+        {/* Insignias de tecnologías (Skills) */}
+        <div className="about-skills">
+          {['React', 'Node.js', 'JavaScript', 'CSS', 'Firebase', 'Git', 'Vercel'].map((tech, index) => (
+            <span key={index} className="skill-badge">
+              {tech}
+            </span>
+          ))}
+        </div>
       </section>
 
       {/* Sección de Trabajos */}
       <section className="projects-section">
-        <p style={{ 
-          textAlign: 'center', 
-          fontSize: '1.5rem',  
-          fontWeight: '600',
-          color: '#fff'
-        }}>
-          Mis trabajos realizados  
-        </p>       
+        <h2 className="projects-section-title">Mis trabajos realizados</h2>       
         <div className="projects-grid">
           {isLoading ? (
             Array.from({ length: 3 }).map((_, index) => (

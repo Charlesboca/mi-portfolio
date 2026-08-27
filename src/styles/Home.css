@@ -1,11 +1,60 @@
-/* Home.css */
+/* --- SECCIÓN SOBRE MÍ --- */
+.about-section {
+  padding: 2rem;
+  max-width: 850px;
+  margin: 2rem auto;
+  text-align: center;
+  color: #fff;
+  background-color: #121824;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+}
 
-/* Contenedor para alinear tus futuros proyectos en grid */
+.about-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+}
+
+.about-skills {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.skill-badge {
+  background-color: #1e293b;
+  color: #38bdf8;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #334155;
+}
+
+/* --- SECCIÓN DE TRABAJOS --- */
+.projects-section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  fontWeight: 600;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor para alinear tus proyectos en grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .project-card {
@@ -18,10 +67,53 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilo del texto descriptivo para que sea más legible */
-.projects-section p {
-  color: #666;
+/* --- SECCIÓN SOBRE MÍ --- */
+.about-section {
+  padding: 2rem;
+  max-width: 850px;
+  margin: 2rem auto;
+  text-align: center;
+  color: #fff;
+  background-color: #121824; /* Fondo sutil estilo tarjeta */
+  border: 1px solid #1e293b; /* Borde fino elegante */
+  border-radius: 12px;
+}
+
+.about-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.about-description {
   font-size: 1.1rem;
-  max-width: 600px;
-  margin: 1rem auto;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+}
+
+.about-skills {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.skill-badge {
+  background-color: #1e293b;
+  color: #38bdf8;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #334155;
+}
+
+/* --- TÍTULO DE TRABAJOS --- */
+.projects-section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.5rem;
 }
