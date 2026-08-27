@@ -2,14 +2,14 @@
 
 export const getProyectos = () => {
   return [
-    {
+   /*  {
       id: 1,
       title: "Prode Futbolero",
       description: "App de pronósticos deportivos en tiempo real con optimización de lectura en Firebase.",
       tech: ["React", "Firebase", "Vite","Vercel"],
       link: "https://prode-futbolero.vercel.app/",
       image: "/prode.jpg" // Agrega esta línea para incluir la imagen del proyecto
-    },
+    }, */
     {
       id: 2,
       title: "RowaSound",
